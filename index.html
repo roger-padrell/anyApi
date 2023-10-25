@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>AnyApi - a simple and eazy-to-use api documentation</title>
+  </head>
+  <body>
+    <h1>AnyApi</h1>
+    <h2>Select an api</h2>
+    <div id="cont" class="scrolling-wrapper">
+    </div>
+  </body>
+  <script>
+    function createCard(title, id){
+      var container = document.getElementById("cont");
+      let newEl = document.createElement("div");
+      newEl.classList.add("card");
+      newEl.innerHTML = '<a href="./?' + id + '">' + title + '</a>';
+      container.appendChild(newEl)
+    }
+  </script>
+</html>
